@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Sacha THENARD | Développeur Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: '#0f172a',
+            card: '#020617',
+            accent: '#38bdf8'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-background text-gray-200 font-sans">
+
+<!-- HERO -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 class="text-4xl md:text-5xl font-bold">
+    Développeur Web Junior
+  </h1>
+  <p class="mt-4 text-gray-400 max-w-xl">
+    BTS SIO SLAM — Applications web modernes, simples et efficaces.
+  </p>
+
+  <div class="mt-8 flex gap-4">
+    <a href="#projects" class="bg-accent text-black px-6 py-3 rounded-lg font-medium hover:opacity-90">
+      Voir mes projets
+    </a>
+    <a href="https://github.com/tonpseudo" target="_blank"
+       class="border border-gray-500 px-6 py-3 rounded-lg hover:border-accent">
+      GitHub
+    </a>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-semibold mb-10">Projets</h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Project Card -->
+    <div class="bg-card rounded-xl p-6 hover:-translate-y-2 transition">
+      <h3 class="text-xl font-semibold">Gestion de tâches</h3>
+      <p class="text-gray-400 mt-2">
+        Application CRUD avec authentification utilisateur.
+      </p>
+      <p class="text-sm text-accent mt-4">
+        PHP · MySQL · Bootstrap
+      </p>
+      <div class="mt-4 flex gap-4 text-sm">
+        <a href="#" class="hover:underline">Live</a>
+        <a href="#" class="hover:underline">Code</a>
+      </div>
+    </div>
+
+    <!-- Duplicate cards -->
+    <div class="bg-card rounded-xl p-6 hover:-translate-y-2 transition">
+      <h3 class="text-xl font-semibold">Mini CRM</h3>
+      <p class="text-gray-400 mt-2">
+        Gestion de clients et contacts.
+      </p>
+      <p class="text-sm text-accent mt-4">
+        JavaScript · API · SQL
+      </p>
+    </div>
+
+    <div class="bg-card rounded-xl p-6 hover:-translate-y-2 transition">
+      <h3 class="text-xl font-semibold">Site vitrine</h3>
+      <p class="text-gray-400 mt-2">
+        Site responsive pour artisan.
+      </p>
+      <p class="text-sm text-accent mt-4">
+        HTML · CSS · JS
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="text-center py-20">
+  <h2 class="text-2xl font-semibold">Me contacter</h2>
+  <p class="text-gray-400 mt-4">
+    📧 sachathenard01@gmail.com
+  </p>
+</section>
+
+</body>
+</html>
