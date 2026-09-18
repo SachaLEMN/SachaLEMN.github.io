@@ -1,48 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Sacha THENARD</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: '#0f172a',
-            card: '#020617',
-            accent: '#38bdf8'
-          }
-        }
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
+    <title>Sacha THENARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-background text-gray-200 font-sans">
+<body>
 
-<!-- HERO -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-  <h1 class="text-4xl md:text-5xl font-bold">
-    Portfolio de Sacha THENARD
-  </h1>
-  <p class="mt-4 text-gray-400 max-w-xl">
-    BTS SIO SLAM — Solutions Logicielles et Applications Métiers et SISR - Solutions d'Infrastructure, Systèmes et Réseaux.
-  </p>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Portfolio de Sacha THENARD</h1>
 
-  <div class="mt-8 flex gap-4">
-    <a href="#projects" class="bg-accent text-black px-6 py-3 rounded-lg font-medium hover:opacity-90">
-      Voir mes projets
-    </a>
-    <a href="https://github.com/tonpseudo" target="_blank"
-       class="border border-gray-500 px-6 py-3 rounded-lg hover:border-accent">
-      GitHub
-    </a>
-  </div>
-</section>
+        <p class="hero-description">
+            BTS SIO SLAM — Solutions Logicielles et Applications Métiers et
+            SISR — Solutions d'Infrastructure, Systèmes et Réseaux.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+                Voir mes projets
+            </a>
+
+            <a href="https://github.com/SachaLEMN"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn btn-secondary">
+                GitHub
+            </a>
+        </div>
+    </section>
 
 </body>
 </html>
