@@ -100,3 +100,27 @@ body {
         flex-direction: column;
     }
 }
+
+/* =========================
+   BODY
+   ========================= */
+
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    padding: 20px;
+}
+
+.body-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.body-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
