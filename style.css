@@ -1,6 +1,5 @@
 * {
     margin: 0;
-     margin-left: 250px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -144,7 +143,7 @@ body {
 
 /* =========================
    BODY
-   ========================= */
+   ========================= */*
 
 .body {
     font-family: Arial, sans-serif;
@@ -152,6 +151,7 @@ body {
     background-color: #0f172a;
     color: #e5e7eb;
     padding: 20px;
+    margin-left: 250px;
 }
 
 .body-title {
