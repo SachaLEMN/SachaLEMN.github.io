@@ -1,5 +1,6 @@
 * {
     margin: 0;
+     margin-left: 250px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -48,10 +49,6 @@ body {
 .sidebar-nav a:hover {
     color: #38bdf8;
     background-color: rgba(56, 189, 248, 0.1);
-}
-
-main {
-    margin-left: 250px;
 }
 
 
