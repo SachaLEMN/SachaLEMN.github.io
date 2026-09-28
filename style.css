@@ -65,6 +65,7 @@ body {
 
     text-align: center;
     padding: 0 24px;
+    margin-left: 250px;
 }
 
 .header h1 {
@@ -159,9 +160,32 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     margin-left: 20px;
+    align-items: center;
 }
 
 .body-content { 
     max-width: 800px;
     margin-left: 10px;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.content-card {
+    background-color: #020617;
+
+    border: 1px solid #334155;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
 }
