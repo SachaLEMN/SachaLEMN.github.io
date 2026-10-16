@@ -2,127 +2,326 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Sacha THENARD</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Sacha THENARD — Portfolio</title>
+    <meta name="description" content="Portfolio de Sacha THENARD, étudiant en BTS SIO SISR, diplômé BTS SIO SLAM.">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<aside class="sidebar">
-
-    <div class="sidebar-header">
-        <a href="#accueil" class="logo">
-            accueil
-        </a>
-    </div>
-
-    <nav class="sidebar-nav">
-        <a href="#presentation">Présentation</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#veille">Veille technologique</a>
-    </nav>
-
-</aside>
-
 <body>
 
-    <!-- Header -->
-    <section class="header" id="accueil">
-        <h1>Portfolio de Sacha THENARD</h1>
+    <!-- ===== Barre latérale ===== -->
+    <aside class="sidebar">
+        <a href="#accueil" class="logo">
+            <span class="logo-initiales">ST</span>
+            <span class="logo-nom">Sacha THENARD</span>
+        </a>
 
-        <p class="header-description">
-            BTS SIO SLAM — Solutions Logicielles et Applications Métiers et
-            SISR — Solutions d'Infrastructure, Systèmes et Réseaux.
-        </p>
+        <nav class="sidebar-nav">
+            <a href="#presentation">Présentation</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#veille">Veille technologique</a>
+        </nav>
 
-        <div class="header-buttons">
-            <a href="https://github.com/SachaLEMN"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-secondary">
-                GitHub
-            </a>
+        <div class="sidebar-footer">
+            <a href="https://github.com/SachaLEMN" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-    </section>
+    </aside>
 
-    <!-- Body -->
-    <section class="body" id="presentation">
-        <p class="body-title">Présentation</p>
+    <main>
 
-        <article class="content-card">
-            <h3>À propos de moi</h3>
+        <!-- ===== Accueil ===== -->
+        <section class="hero" id="accueil">
+            <p class="hero-surtitre">BTS SIO · SLAM &amp; SISR</p>
+            <h1>Portfolio de <span class="accent">Sacha THENARD</span></h1>
 
-            <p>
-                Je m'appelle Sacha THENARD, j'ai 21 ans et je suis actuellement
-                en deuxième année de BTS SIO (Services Informatiques aux Organisations)
-                au lycée Joseph-Marie Carriat à Bourg-en-Bresse.
+            <p class="hero-description">
+                Diplômé du BTS SIO option SLAM (Solutions Logicielles et Applications Métiers),
+                actuellement en option SISR (Solutions d'Infrastructure, Systèmes et Réseaux).
             </p>
 
-            <p>
-                Passionné par l'informatique, je m'intéresse particulièrement
-                au développement web ainsi qu'à l'administration des systèmes
-                et des réseaux. Je souhaite continuer à approfondir mes
-                connaissances et mes compétences dans ces domaines.
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                <a href="https://github.com/SachaLEMN" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+            </div>
+        </section>
+
+        <!-- ===== Présentation ===== -->
+        <section class="section" id="presentation">
+            <h2 class="section-title">Présentation</h2>
+
+            <div class="grid grid-2">
+                <article class="card">
+                    <h3>À propos de moi</h3>
+                    <p>
+                        Je m'appelle Sacha THENARD, j'ai 21 ans et je suis actuellement
+                        en deuxième année de BTS SIO (Services Informatiques aux Organisations)
+                        au lycée Joseph-Marie Carriat à Bourg-en-Bresse.
+                    </p>
+                    <p>
+                        Passionné par l'informatique, je m'intéresse particulièrement
+                        au développement web ainsi qu'à l'administration des systèmes
+                        et des réseaux. Je souhaite continuer à approfondir mes
+                        connaissances et mes compétences dans ces domaines.
+                    </p>
+                    <p>
+                        Actuellement en option SISR, j'ai également suivi et validé
+                        un premier BTS SIO en option SLAM.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Mon projet professionnel</h3>
+                    <p>
+                        Mon objectif professionnel est de développer une double
+                        compétence en développement d'applications et en
+                        administration des systèmes et des réseaux.
+                    </p>
+                    <p>
+                        Je souhaite ainsi devenir un professionnel polyvalent,
+                        capable d'intervenir aussi bien sur la conception et
+                        le développement de solutions logicielles que sur
+                        la gestion et la maintenance des infrastructures informatiques.
+                    </p>
+                    <p>
+                        C'est dans cette optique qu'après avoir validé mon BTS SIO
+                        option SLAM, j'ai choisi de poursuivre ma formation
+                        en option SISR afin de compléter mes compétences.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Parcours (frise) ===== -->
+        <section class="section" id="parcours">
+            <h2 class="section-title">Parcours</h2>
+
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <span class="timeline-date">Année – Année</span>
+                    <h3>Intitulé de la formation / du poste</h3>
+                    <p class="timeline-lieu">Établissement / entreprise</p>
+                    <p>Description courte à compléter.</p>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">Année – Année</span>
+                    <h3>Intitulé de la formation / du poste</h3>
+                    <p class="timeline-lieu">Établissement / entreprise</p>
+                    <p>Description courte à compléter.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ===== Compétences ===== -->
+        <section class="section" id="competences">
+            <h2 class="section-title">Compétences</h2>
+
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>Catégorie 1</h3>
+                    <ul class="tags">
+                        <li>Compétence</li>
+                        <li>Compétence</li>
+                        <li>Compétence</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Catégorie 2</h3>
+                    <ul class="tags">
+                        <li>Compétence</li>
+                        <li>Compétence</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Catégorie 3</h3>
+                    <ul class="tags">
+                        <li>Compétence</li>
+                        <li>Compétence</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Projets ===== -->
+        <section class="section" id="projets">
+            <h2 class="section-title">Projets</h2>
+
+            <div class="grid grid-3">
+                <article class="card card-projet">
+                    <span class="badge">SISR</span>
+                    <h3>Nom du projet</h3>
+                    <p>Description courte à compléter.</p>
+                    <ul class="tags">
+                        <li>Techno</li>
+                        <li>Techno</li>
+                    </ul>
+                    <a href="#" class="card-lien">Voir le détail →</a>
+                </article>
+                <article class="card card-projet">
+                    <span class="badge">SLAM</span>
+                    <h3>Nom du projet</h3>
+                    <p>Description courte à compléter.</p>
+                    <ul class="tags">
+                        <li>Techno</li>
+                        <li>Techno</li>
+                    </ul>
+                    <a href="#" class="card-lien">Voir le détail →</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== Veille ===== -->
+        <section class="section" id="veille">
+            <h2 class="section-title">Veille technologique</h2>
+
+            <p class="section-intro">
+                Ma veille porte sur les <strong>cartes graphiques</strong> et plus particulièrement
+                sur le <strong>DLSS</strong> et les technologies d'upscaling par intelligence artificielle.
             </p>
 
-            <p>
-                Actuellement en option SISR (Solutions d'Infrastructure,
-                Systèmes et Réseaux), j'ai également suivi et validé
-                un premier BTS SIO en option SLAM
-                (Solutions Logicielles et Applications Métiers).
-            </p>
-        </article>
+            <!-- Sujet + méthode -->
+            <div class="grid grid-2">
+                <article class="card">
+                    <h3>Pourquoi ce sujet ?</h3>
+                    <p>
+                        Raisons du choix à compléter (intérêt personnel, lien avec le BTS SIO,
+                        enjeux pour les entreprises…).
+                    </p>
+                </article>
 
-        <article class="content-card">
-            <h3>Mon projet professionnel</h3>
+                <article class="card">
+                    <h3>Ma méthode de veille</h3>
+                    <p>Outils et sources utilisés pour suivre le sujet :</p>
+                    <ul class="tags tags-espace">
+                        <li>Agrégateur d'articles (à choisir)</li>
+                        <li>Alertes par mots-clés</li>
+                        <li>Sites spécialisés</li>
+                        <li>Vidéos YouTube</li>
+                    </ul>
+                </article>
+            </div>
 
-            <p>
-                Mon objectif professionnel est de développer une double
-                compétence en développement d'applications et en
-                administration des systèmes et des réseaux.
-            </p>
+            <!-- Les bases -->
+            <h3 class="sous-titre">Comprendre le sujet</h3>
+            <div class="grid grid-3">
+                <article class="card">
+                    <h3>Qu'est-ce que le DLSS ?</h3>
+                    <p>
+                        Le DLSS (Deep Learning Super Sampling) est une technologie de NVIDIA.
+                        Le jeu est calculé dans une définition plus basse, puis une IA
+                        reconstruit une image plus nette, ce qui augmente le nombre d'images par seconde.
+                    </p>
+                </article>
 
-            <p>
-                Je souhaite ainsi devenir un professionnel polyvalent,
-                capable d'intervenir aussi bien sur la conception et
-                le développement de solutions logicielles que sur
-                la gestion et la maintenance des infrastructures informatiques.
-            </p>
+                <article class="card">
+                    <h3>Comment ça marche ?</h3>
+                    <p>
+                        Le calcul est réalisé par les cœurs Tensor des cartes RTX, des unités
+                        dédiées à l'IA. Les versions récentes savent aussi générer des images
+                        intermédiaires (Frame Generation).
+                    </p>
+                </article>
 
-            <p>
-                C'est dans cette optique qu'après avoir validé mon BTS SIO
-                option SLAM, j'ai choisi de poursuivre ma formation
-                en option SISR afin de compléter mes compétences.
-            </p>
-        </article>
+                <article class="card">
+                    <h3>La concurrence</h3>
+                    <p>
+                        AMD propose le FSR (FidelityFX Super Resolution) et Intel le XeSS.
+                        Ces solutions visent le même objectif : plus de fluidité sans trop
+                        perdre en qualité d'image.
+                    </p>
+                </article>
+            </div>
 
-    </section>
+            <!-- Chronologie -->
+            <h3 class="sous-titre">Évolution du DLSS</h3>
+            <ol class="timeline">
+                <li class="timeline-item">
+                    <span class="timeline-date">2018</span>
+                    <h3>DLSS 1</h3>
+                    <p>Lancement avec les premières cartes RTX (série 20).</p>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">2020</span>
+                    <h3>DLSS 2</h3>
+                    <p>Nette amélioration de la qualité d'image grâce à un modèle d'IA généraliste.</p>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">2022</span>
+                    <h3>DLSS 3</h3>
+                    <p>Arrivée de la Frame Generation avec la série RTX 40.</p>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">2023</span>
+                    <h3>DLSS 3.5</h3>
+                    <p>Ajout du Ray Reconstruction pour améliorer le rendu du ray tracing.</p>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-date">2025</span>
+                    <h3>DLSS 4</h3>
+                    <p>Multi Frame Generation avec la série RTX 50.</p>
+                </li>
+            </ol>
 
+            <!-- Articles collectés -->
+            <h3 class="sous-titre">Articles de veille</h3>
+            <div class="grid grid-3">
+                <article class="card card-projet">
+                    <span class="badge">JJ/MM/AAAA</span>
+                    <h3>Titre de l'article</h3>
+                    <p class="article-source">Source</p>
+                    <p>Résumé en deux ou trois phrases, avec ton avis.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="card-lien">Lire l'article →</a>
+                </article>
+                <article class="card card-projet">
+                    <span class="badge">JJ/MM/AAAA</span>
+                    <h3>Titre de l'article</h3>
+                    <p class="article-source">Source</p>
+                    <p>Résumé en deux ou trois phrases, avec ton avis.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="card-lien">Lire l'article →</a>
+                </article>
+                <article class="card card-projet">
+                    <span class="badge">JJ/MM/AAAA</span>
+                    <h3>Titre de l'article</h3>
+                    <p class="article-source">Source</p>
+                    <p>Résumé en deux ou trois phrases, avec ton avis.</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="card-lien">Lire l'article →</a>
+                </article>
+            </div>
 
-    <section class="body" id="parcours">
+            <!-- Bilan -->
+            <article class="card card-bilan">
+                <h3>Bilan de ma veille</h3>
+                <p>
+                    Ce que j'ai appris, les tendances observées et ce que ça peut changer
+                    pour les utilisateurs et les entreprises (à compléter).
+                </p>
+            </article>
+        </section>
 
-    </section>
+        <footer class="footer">
+            <p>© 2026 Sacha THENARD</p>
+        </footer>
 
+    </main>
 
-    <section class="body" id="parcours">
+    <!-- Met en surbrillance le lien de la section visible -->
+    <script>
+        const liens = document.querySelectorAll('.sidebar-nav a');
+        const sections = document.querySelectorAll('main section[id]');
 
-    </section>
+        const observer = new IntersectionObserver((entrees) => {
+            entrees.forEach((entree) => {
+                if (entree.isIntersecting) {
+                    liens.forEach((lien) => {
+                        lien.classList.toggle('actif', lien.getAttribute('href') === '#' + entree.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
 
-    
-    <section class="body" id="competences">
-
-    </section>
-
-
-    <section class="body" id="projets">
-
-    </section>
-
-
-    <section class="body" id="veille">
-
-    </section>
+        sections.forEach((section) => observer.observe(section));
+    </script>
 </body>
 </html>
