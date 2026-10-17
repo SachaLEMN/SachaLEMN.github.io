@@ -3,13 +3,15 @@
    ========================= */
 
 :root {
-    --bg: #0f172a;
-    --bg-card: #020617;
-    --border: #334155;
-    --text: #e5e7eb;
-    --text-muted: #94a3b8;
-    --accent: #38bdf8;
-    --accent-soft: rgba(56, 189, 248, 0.1);
+    --bg: #1c1917;
+    --bg-card: #0c0a09;
+    --border: #44403c;
+    --border-hover: #57534e;
+    --text: #f5f5f4;
+    --text-muted: #a8a29e;
+    --accent: #f59e0b;
+    --accent-soft: rgba(245, 158, 11, 0.1);
+    --accent-border: rgba(245, 158, 11, 0.4);
 
     --sidebar-width: 250px;
     --radius: 12px;
@@ -104,6 +106,8 @@ main {
 
 .sidebar-footer {
     margin-top: auto;
+    display: flex;
+    gap: 16px;
 }
 
 .sidebar-footer a {
@@ -182,7 +186,7 @@ main {
 
 .btn-secondary {
     color: var(--text);
-    border: 1px solid #6b7280;
+    border: 1px solid var(--border-hover);
 }
 
 .btn-secondary:hover {
@@ -208,7 +212,7 @@ main {
     gap: 16px;
 }
 
-/* petit trait cyan après le titre */
+/* petit trait coloré après le titre */
 .section-title::after {
     content: "";
     flex: 1;
@@ -378,6 +382,70 @@ main {
 .card-bilan {
     margin-top: 56px;
     border-left: 4px solid var(--accent);
+}
+
+/* =========================
+   COMPÉTENCES
+   ========================= */
+
+.sous-titre .badge {
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+.card-competence h3 {
+    font-size: 1.1rem;
+}
+
+/* cartes SISR mises en avant */
+.card-sisr {
+    border-top: 3px solid var(--accent);
+    background: linear-gradient(180deg, var(--accent-soft), var(--bg-card) 60%);
+}
+
+.card-sisr .tags li {
+    border-color: var(--accent-border);
+}
+
+/* =========================
+   PARCOURS
+   ========================= */
+
+.parcours-colonnes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+}
+
+.sous-titre-colonne {
+    margin-top: 0;
+}
+
+.timeline-item p {
+    color: var(--text-muted);
+}
+
+.timeline-item .tags {
+    margin-top: 12px;
+}
+
+.timeline-missions {
+    padding-left: 18px;
+    color: var(--text-muted);
+}
+
+.timeline-missions li + li {
+    margin-top: 4px;
+}
+
+.timeline-missions li::marker {
+    color: var(--accent);
+}
+
+@media (max-width: 900px) {
+    .parcours-colonnes {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =========================
